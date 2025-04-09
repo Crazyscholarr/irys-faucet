@@ -1,3 +1,57 @@
+Irys-Faucet Tutorial
+Welcome to the irys-faucet tutorial! This is an automated tool that helps you request tokens from the Irys faucet (https://irys.xyz/faucet) using multiple wallets and proxies. This tutorial will guide you through the steps to install and run the program easily.
+
+1. Prerequisites
+Before you start using the program, you need to prepare the following:
+
+Required software
+Node.js: Make sure you have Node.js installed (version 14 or higher). Download from: https://nodejs.org/
+A text editor like Visual Studio Code, Notepad++, or any other you like.
+Required files
+wallets.txt: List of wallet addresses you want to use to receive tokens.
+proxies.txt: List of proxies to send requests to (provided in your code).
+
+config.yaml: Configuration file containing API key and language information.
+Captcha Solving Service Account
+You need an account from 2Captcha or CapSolver to solve captchas automatically.
+Get the API key from your account (2CAPTCHA_KEY or CAPSOLVER_KEY).
+2. Install the Program
+Step 1: Download the source code
+Copy all the code in the index.js file you provided and save it as a file named index.js on your computer.
+Step 2: Prepare the files
+Create a wallets.txt file:
+Open a text editor, enter each wallet address (one wallet on a line). For example:
+0x1234567890abcdef1234567890abcdef12345678
+0xabcdef1234567890abcdef1234567890abcdef12
+Save the file as wallets.txt in the same directory as index1.js.
+Create or use the proxies.txt file:
+You have provided a long list of proxies in the proxies.txt file. Copy this list to a text file and save it as proxies.txt in the same directory as index.js.
+Make sure each proxy is on its own line, for example:
+http://156.228.124.164:3128
+http://156.228.81.69:3128
+Create a config.yaml file:
+Copy the following content, replacing it with your API key, and save it as config.yaml in the same directory:
+yaml
+
+captcha_provider: '2captcha' # Replace with 'capsolver' if using CapSolver
+2CAPTCHA_KEY: 'your_2captcha_api_key_here'
+CAPSOLVER_KEY: 'your_capsolver_api_key_here'
+language: 'vi' # Replace with 'en' if using English
+Replace your_2captcha_api_key_here or your_capsolver_api_key_here with your actual API key.
+Step 3: Install the necessary libraries:
+
+npm install chalk
+npm install axios
+npm install fs
+npm install @2captcha/captcha-solver
+npm install capsolver-npm
+npm install js-yaml
+npm install readline
+
+3. Run the Program
+
+node index1.js
+
 Hướng Dẫn Sử Dụng Chương Trình Irys-Faucet
 Chào mừng bạn đến với hướng dẫn sử dụng chương trình irys-faucet! Đây là một công cụ tự động giúp bạn yêu cầu token từ faucet của Irys (https://irys.xyz/faucet) bằng cách sử dụng nhiều ví và proxy. Hướng dẫn này sẽ dẫn bạn qua từng bước để cài đặt và chạy chương trình một cách dễ dàng.
 
@@ -46,6 +100,8 @@ Sao chép toàn bộ mã trong tệp index.js mà bạn đã cung cấp và lưu
   npm install capsolver-npm
   npm install js-yaml
   npm install readline
+
 3. Chạy Chương Trình
 
   node index1.js
+
