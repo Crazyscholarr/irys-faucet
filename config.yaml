@@ -1,0 +1,6 @@
+# Cấu hình dịch vụ giải captcha # Configure captcha solving service
+captcha_provider: '2captcha'  # Có thể thay bằng 'capsolver' # Replaceable with 'capsolver'
+2CAPTCHA_KEY: 'your_2captcha_api_key_here'
+CAPSOLVER_KEY: 'your_capsolver_api_key_here'
+# Ngôn ngữ: 'vi' cho Tiếng Việt, 'en' for English
+language: 'vi'
