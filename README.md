@@ -21,28 +21,28 @@ Copy all the code in the index.js file you provided and save it as a file named 
 Step 2: Prepare the files
 Create a wallets.txt file:
 Open a text editor, enter each wallet address (one wallet on a line). For example:
-``
+```bash
 0x1234567890abcdef1234567890abcdef12345678
 0xabcdef1234567890abcdef1234567890abcdef12
-``
+```
 Save the file as wallets.txt in the same directory as index1.js.
 Create or use the proxies.txt file:
 You have provided a long list of proxies in the proxies.txt file. Copy this list to a text file and save it as proxies.txt in the same directory as index.js.
 Make sure each proxy is on its own line, for example:
-``
+```bash
 http://156.228.124.164:3128
 http://156.228.81.69:3128
-``
+```
 Create a config.yaml file:
 Copy the following content, replacing it with your API key, and save it as config.yaml in the same directory:
 yaml
-``
+```bash
 captcha_provider: '2captcha' # Replace with 'capsolver' if using CapSolver
 2CAPTCHA_KEY: 'your_2captcha_api_key_here'
 CAPSOLVER_KEY: 'your_capsolver_api_key_here'
 language: 'vi' # Replace with 'en' if using English
 Replace your_2captcha_api_key_here or your_capsolver_api_key_here with your actual API key.
-``
+```
 Step 3: Install the necessary libraries:
 ```bash
 npm install chalk
